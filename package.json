@@ -1,0 +1,43 @@
+{
+  "name": "",
+  "version": "0.0.0",
+  "keywords": [
+    "klap"
+  ],
+  "repository": "vsamaru/klap",
+  "license": "MIT",
+  "author": "vsamaru <vsamaru@gmail.com>",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "browser": "./dist/klap.js",
+      "import": "./dist/klap.js",
+      "require": "./dist/klap.cjs.js",
+      "umd": "./dist/klap.umd.js"
+    },
+    "./": "./",
+    "./package.json": "./package.json"
+  },
+  "main": "dist/klap.cjs.js",
+  "unpkg": "dist/klap.js",
+  "module": "dist/klap.js",
+  "source": "src/klap.js",
+  "browser": "dist/klap.umd.js",
+  "types": "dist/klap.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "g": "git add . && git commit -m 0 && git push -u origin main -f",
+    "build": "klap build",
+    "prepublishOnly": "klap build",
+    "start": "klap start",
+    "watch": "klap watch"
+  },
+  "devDependencies": {
+    "klap": "^7.0.11",
+    "typescript": "^4.7.3"
+  }
+}
