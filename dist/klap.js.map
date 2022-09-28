@@ -1,0 +1,1 @@
+{"version":3,"file":"klap.js","sources":["../src/klap.js"],"sourcesContent":["/**\n * add two numbers\n * @param {number} a first number\n * @param {number} b second number\n */\nexport const sum = (a, b) => a + b;\n"],"names":["sum","a","b"],"mappings":"AAKO,IAAMA,EAAM,CAACC,EAAGC,IAAMD,EAAIC"}
